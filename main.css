@@ -2,6 +2,31 @@
 	
 width: 60%; /*ширина*/
 background-color: purple; /*задний цвет*/
+}
 body{
 	/*background-image: url(img/img2.jpg); задняя картинка*/
 }
+/*main.main>.img-box>img.image [src='img/img.jpg'][alt='Gallery image']*10 мы создали 10 строк с картинками в контейнере Див и контейнере Майн*/
+.img-box{
+	column-count: 4; /*создаем 4 столбца из наших картинок*/
+	column-gap: 0; /*убирем отступ*/
+}
+.image{
+	max-width: 100%;
+	display: block;
+	/*background-position: center;/*совмещает изображение с центром контейнера*/
+
+-webkid-background-size= cover;
+}
+background-size= cover; масштабирует изображение в соответсвии с его размерами
+.image + .image {
+	margin: 3px;
+}
+.size{
+	font-size: 60px;/*размер шрифта*/
+	text-align: center; /*поставили надпись по центру*/
+	width: 75%;
+	padding: 30px;
+    font-family: 'Ranga', cursive;
+}
+
