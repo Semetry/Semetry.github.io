@@ -1,5 +1,4 @@
 .a2{
-	
 width: 60%; /*ширина*/
 background-color: purple; /*задний цвет*/
 }
@@ -14,10 +13,13 @@ body{
 .image{
 	max-width: 100%;
 	display: block;
+	margin: 5px;
 	/*background-position: center;/*совмещает изображение с центром контейнера*/
 
 -webkid-background-size= cover;
+transition: 0.4s ease, transform 0.5s ease-in,box-shadow 0.3s ease-out; /*теперь прозрачность появляется не сразу*/
 }
+
 background-size= cover; масштабирует изображение в соответсвии с его размерами
 .image + .image {
 	margin: 3px;
@@ -29,4 +31,16 @@ background-size= cover; масштабирует изображение в со�
 	padding: 30px;
     font-family: 'Ranga', cursive;
 }
-
+.image:hover{
+	opacity: 1.0; /*прозрачность картинки*/
+	transform: scale(1.2) rotate(360deg);/*картинка становится больше. число означает проценты*/ /*rotate-это поворот картинки*/
+	z-index:10;
+	box-shadow: 0 0 200px 30px rgba(0,0,0,0.4);
+}
+.link{
+	padding: 50px 0;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
