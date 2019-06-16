@@ -33,7 +33,7 @@ background-size= cover; масштабирует изображение в со�
 }
 .image:hover{
 	opacity: 1.0; /*прозрачность картинки*/
-	transform: scale(1.2) rotate(360deg);/*картинка становится больше. число означает проценты*/ /*rotate-это поворот картинки*/
+	transform: scale(1.2);/*картинка становится больше. число означает проценты*/ /*rotate-это поворот картинки*/
 	z-index:10;
 	box-shadow: 0 0 200px 30px rgba(0,0,0,0.4);
 }
@@ -43,4 +43,26 @@ background-size= cover; масштабирует изображение в со�
 	justify-content: center;
 	-ms-align-items: center;
 	align-items: center;
+}
+.text{
+	font-size:20px;
+	line-height: 1;
+}
+.first-image{
+	width: 70%;
+}
+.first-text{
+	text-transform: uppercase;
+	font-size: 40px;
+}
+body{
+	background-color: #97bc95;
+}
+.textp2{
+	text-transform: uppercase;
+	font-size: 40px;
+}
+.title{
+	text-transform: uppercase;
+	font-size: 40px;
 }
